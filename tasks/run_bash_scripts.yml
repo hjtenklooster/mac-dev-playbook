@@ -1,0 +1,6 @@
+---
+- name: Run bash scripts
+  command: "{{ item }}"
+  loop: "{{ bash_scripts }}"
+  changed_when: false
+
