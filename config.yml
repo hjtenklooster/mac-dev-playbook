@@ -28,7 +28,7 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/src/dotfiles
 dotfiles_files:
   - .osx
-#  - .zshrc
+  - .zshrc
 #  - .gitignore
 #  - .inputrc
 #  - .vimrc
@@ -36,9 +36,9 @@ dotfiles_files:
 homebrew_installed_packages:
 # - ansible # Installed via Pip.
   - autoconf
+  - autojump
   - bash
   - binutils
-  - blackhole-2ch
   - cmake
   - coreutils
   - coreutils
@@ -46,8 +46,8 @@ homebrew_installed_packages:
   - ed
   - ffmpeg
   - findutils
-  - findutils
   - flex
+  - fzf
   - gawk
   - gnu-indent
   - gnu-sed
@@ -61,6 +61,7 @@ homebrew_installed_packages:
   - m4
   - make
   - nano
+  - nmap
   - screen
   - tmux
   - watch
@@ -79,11 +80,16 @@ homebrew_cask_apps:
   - adobe-creative-cloud
   - appcleaner
   - betterdisplay
+  - blackhole-2ch
   - chatgpt
+  - figma
   - fork
+  - ghostty
   - google-chrome
+  - jump
   - jump-desktop-connect
   - karabiner-elements
+  - obsidian
   - readdle-spark
   - utm
 
@@ -100,7 +106,10 @@ homebrew_cask_apps:
 #  - transmit
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps: 
+  - { id: 524141863, name: "Jump Desktop (RDP, VNC, Fluid)" }
+  - { id: 439623248, name: "iA Writer Classic (Legacy Support Edition)" }
+
 mas_email: ""
 mas_password: ""
 
@@ -121,10 +130,10 @@ npm_packages: []
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
-pip_packages:
-  - ane_transformers
-  - openai-whisper
-  - coremltools
+pip_packages: []
+#  - ane_transformers
+#  - openai-whisper
+#  - coremltools
 # - name: mkdocs
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
