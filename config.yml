@@ -29,9 +29,7 @@ dotfiles_repo_local_destination: ~/src/dotfiles
 dotfiles_files:
   - .osx
   - .zshrc
-#  - .gitignore
-#  - .inputrc
-#  - .vimrc
+  - .p10k.zsh
 
 homebrew_installed_packages:
 # - ansible # Installed via Pip.
